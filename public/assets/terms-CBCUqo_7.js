@@ -1,0 +1,1 @@
+import{m as e}from"./site-data-MTL01_bS.js";import{s as t}from"./index-C5wMGZsu.js";import{t as n}from"./policy-page-Ccw9OJTT.js";var r=e();function i(){return(0,r.jsx)(n,{content:t[`terms-of-service`]})}export{i as component};
