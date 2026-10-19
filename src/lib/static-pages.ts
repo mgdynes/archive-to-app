@@ -60,6 +60,8 @@ export function enhanceHead(html: string, origin: string, path: string): string 
     `<meta name="twitter:title" content="${esc(title)}"/>`,
     `<meta name="twitter:description" content="${esc(description)}"/>`,
     `<meta name="twitter:image" content="${esc(image)}"/>`,
+    `<meta name="twitter:site" content="@mobixgen"/>`,
+    `<meta name="twitter:creator" content="@mobixgen"/>`,
     `<meta name="theme-color" content="#050807"/>`,
     `<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>`,
     `<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>`,
@@ -71,7 +73,7 @@ export function enhanceHead(html: string, origin: string, path: string): string 
   return html
     .replace(/<link rel="canonical"[^>]*\/?>/g, "")
     .replace(/<meta property="og:(url|image|site_name|locale)"[^>]*\/?>/g, "")
-    .replace(/<meta name="twitter:(image|title|description)"[^>]*\/?>/g, "")
+    .replace(/<meta name="twitter:(image|title|description|site|creator)"[^>]*\/?>/g, "")
     .replace("</head>", `${tags}</head>`);
 }
 
