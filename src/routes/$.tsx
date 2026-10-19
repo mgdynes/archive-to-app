@@ -13,6 +13,6 @@ export const Route = createFileRoute("/$")({
     ],
   }),
   server: {
-    handlers: { GET: ({ request }) => renderStaticPage(new URL(request.url).pathname) },
+    handlers: { GET: ({ request }) => renderStaticPage(request) },
   },
 });
