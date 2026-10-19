@@ -1,0 +1,8 @@
+[
+  {"capability":"code/pages","source":"Laravel serving prerendered pages (home, about, services x21, products x48, portfolio x15, blogs x9, faq, contact, legal)","outcome":"preserved verbatim, served by catch-all route","status":"verified","next_action":null},
+  {"capability":"assets/media","source":"public/assets, public/media","outcome":"copied to public","status":"verified","next_action":null},
+  {"capability":"redirect /terms-of-service","source":"routes/web.php","outcome":"301 to /terms/","status":"verified","next_action":null},
+  {"capability":"contact form","source":"EasyForms embed forms.mobixgen.com","outcome":"preserved external provider","status":"verified","next_action":null},
+  {"capability":"schema/records/auth","source":"Laravel boilerplate users/cache/jobs tables, unused by pages","outcome":"not applicable","status":"verified","next_action":null},
+  {"capability":"secrets","source":".env (excluded)","outcome":"none used by site","status":"verified","next_action":null}
+]
